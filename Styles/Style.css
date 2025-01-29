@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "Modam Regular";
+    src: url(../Fonts/Modam/Modam-Regular.ttf) format("ttf");
+}
+@font-face {
+    font-family: "Peyda Regular";
+    src: url(../Fonts/Peyda/PeydaWeb-Regular.woff2) format("woff2");
+}
+
+/** Media Querys */
+@media screen and (max-width: 992px) {
+    nav {
+        padding: 20px 20px !important;
+        align-items: center;
+        
+        .right-nav {
+            justify-content: start !important;
+            gap: 14px !important;
+
+            .logo-type {
+                
+                .type {
+                    margin: 0;
+                    font-size: 20px !important;
+                }
+            }
+
+            .link-menu {
+                display: none !important;
+            }
+        }
+
+        .left-nav {
+            .sign-in-btn {
+                display: none !important;
+            }
+        }
+
+        .burger-menu,.burger-img {
+            display: inline !important
+        }
+
+        .burger-img {
+            width: 24px;
+        }
+    }
+
+    .line-1 {
+        margin: 0 !important;
+    }
+}
+
+:root {
+    --primary: #AB9AFF;
+    --dark: #111;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.elem-1 {
+    width: 465px;
+    height: 465px;
+    background-color: var(--primary);
+    border-radius: 100%;
+    filter: blur(200px );
+    position: absolute;
+    right: -245px;
+    top: -200px;
+    z-index: -100;
+}
+
+/** NavBar */
+nav{
+    padding: 34px 80px;
+    display: flex;
+    justify-content: space-between;
+
+        .burger-menu,.burger-img {
+            display: none;
+        }
+
+        .right-nav {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 40px;
+            
+                .logo-type {
+                    display: flex;
+                    gap: 6px;
+                    align-items: center;
+                    justify-content: start;
+    
+                    .logo {
+                        width: 35px;
+                        height: 35px;
+                    }
+    
+                    .type {
+                        font-family: "Modam Regular" !important;
+                        font-size: 35px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        color: var(--dark);
+                        margin: 0;
+                    }
+                }
+
+                .link-menu{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 40px;
+                    margin: 0;
+                    padding: 0;
+                    
+                    .menu-option {
+                        list-style: none;
+                        font-family: "Peyda Regular";
+                        font-size: 20px;
+                        font-style: normal;
+                        line-height: normal;
+                        text-decoration: none;
+                        color: #707786;
+                    }
+                    .active {
+                        color: var(--dark);
+                    }
+                }
+
+            }
+
+        .left-nav {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 15px;
+
+            .sign-in-btn {
+                font-family: "Modam Regular";
+                padding: 10px 20px;
+                border-radius: 57px;
+                outline: none;
+                border: 1px solid #000;
+                background: none;
+                transition: all ease 300ms 100ms;
+            }
+            
+            .sign-in-btn:hover {
+                background-color: #000;
+                color: #fff;
+            }
+            
+            .free-demo-btn {
+                font-family: "Modam Regular";
+                padding: 10px 20px;
+                border-radius: 57px;
+                background: none;
+                color: var(--primary);
+                border: none;
+                outline: none;
+                transition: all ease 300ms 100ms;
+                border: 1px solid var(--primary);
+            }
+
+            .free-demo-btn:hover {
+                background-color: var(--primary);
+                color: #fff;
+            }
+        }
+}   
+
+.line-1 {
+    margin: 0 50px;
+    color: #D8D8D8;
+}
