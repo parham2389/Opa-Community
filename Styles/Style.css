@@ -48,6 +48,12 @@
     .line-1 {
         margin: 0 !important;
     }
+
+    .dark {
+        .burger-img {
+            filter: invert(1);
+        }
+    }
 }
 
 :root {
@@ -126,7 +132,13 @@ nav{
                         line-height: normal;
                         text-decoration: none;
                         color: #707786;
+                        transition: all ease 300ms 100ms;
                     }
+
+                    .menu-option:hover {
+                        color: var(--dark);
+                    }
+
                     .active {
                         color: var(--dark);
                     }
@@ -177,4 +189,35 @@ nav{
 .line-1 {
     margin: 0 50px;
     color: #D8D8D8;
+}
+
+/** Dark Mod */
+.dark {
+    background-color: #111;
+
+    nav {
+        .right-nav {
+            .type {
+                color: #fff;
+            }
+
+            .menu-option:hover {
+                color: #fff;
+            }
+
+            .active {
+                color: #fff;
+            }
+        }
+        .left-nav {
+            .sign-in-btn{
+                color: #fff;
+                border-color: #fff;
+            }
+            .sign-in-btn:hover {
+                color: #111;
+                background-color: #fff;
+            }
+        }
+    }
 }
