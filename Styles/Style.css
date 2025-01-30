@@ -94,6 +94,18 @@
     --dark: #111;
 }
 
+*::-webkit-scrollbar {
+    width: 7px;
+  }
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ab9aff;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
