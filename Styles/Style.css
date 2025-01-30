@@ -49,6 +49,39 @@
         margin: 0 !important;
     }
 
+    header {
+        justify-content: center !important;
+        flex-direction: column !important;
+        padding: 35px 20px !important;
+        gap: 50px;
+        
+        .right-header {
+            width: 100% !important;
+
+            .header-primary-text {
+                font-size: 30px !important;
+            }
+            .header-second-text {
+                font-size: 15px !important;
+                width: auto !important;
+            }
+        }
+
+        .left-header {
+            flex-direction: column;
+            width: 100% !important;
+
+            .header-cover-second, .header-cover-primary {
+                display: none !important;
+            }
+
+            .respon-cover {
+                display: inline-block !important;
+                width: 340px;
+            }
+        }
+    }
+
     .dark {
         .burger-img {
             filter: invert(1);
@@ -191,10 +224,136 @@ nav{
     color: #D8D8D8;
 }
 
+/** Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 80px;
+    
+    .right-header {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 30px !important;
+
+        
+        .tag {
+            display: inline-flex;
+            justify-content: start;
+            align-items: center;
+            gap: 5px;
+            border: 2px solid var(--primary);
+            padding: 6px 15px;
+            border-radius: 55px;
+            
+            .tag-img {
+                width: 30px;
+            }
+            .tag-text {
+                margin: 0;
+                display: inline;
+                font-family: "Modam Regular";
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: var(--dark);
+            }
+        }
+        
+        .header-primary-text {
+            margin: 0;
+            font-family: "Modam Regular";
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        
+        .header-second-text {
+            margin: 0;
+            width: 550px;
+            color: #707786;
+            text-align: right;
+            font-family: "Peyda Regular";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px; /* 192.857% */
+        }
+
+        .free-demo-btn {
+            font-family: "Modam Regular";
+            padding: 10px 20px;
+            border-radius: 57px;
+            background: none;
+            color: var(--primary);
+            border: none;
+            outline: none;
+            transition: all ease 300ms 100ms;
+            border: 1px solid var(--primary);
+            font-family: "Modam Regular";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .free-demo-btn:hover {
+            background-color: var(--primary);
+            color: #fff;
+        }
+    }
+
+    .left-header {
+        display: flex;
+        justify-content: end;
+        width: 50%;
+        gap: 20px;
+        align-items: center;
+
+        .header-cover-second {
+            margin: 0;
+            background-color: var(--primary);
+            border-radius: 21px;
+            height: 335px;
+            width: 210px;
+
+            .cover-second {
+                width: 210px;
+            }
+            .cover-second-text {
+                color: var(--dark);
+                font-family: "Modam Regular";
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin: 0;
+                padding: 12px 15px 15px 15px;
+                text-align: center;
+            }
+        }
+
+        .respon-cover {
+            display: none;
+        }
+
+        .header-cover-primary {
+            width: 280px;
+            height: 400px;
+        }
+    }
+}
+
+
+
 /** Dark Mod */
 .dark {
     background-color: #111;
 
+    /** NaBar */
     nav {
         .right-nav {
             .type {
@@ -217,6 +376,28 @@ nav{
             .sign-in-btn:hover {
                 color: #111;
                 background-color: #fff;
+            }
+        }
+    }
+
+    /** Header */
+    header {
+
+        .right-header {
+
+            .tag-text {
+                color: var(--primary);
+            }
+
+            .header-primary-text {
+                color: #fff;
+            }
+        }
+
+        .left-header {
+
+            .cover-second-text {
+                color: #fff;
             }
         }
     }
