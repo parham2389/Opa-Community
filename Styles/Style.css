@@ -86,6 +86,28 @@
         }
     }
 
+    .about {
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+
+        .logo-type-about {
+            .logo-about {
+                width: 27px !important;
+            }
+            .about-type { 
+                font-size: 30px !important;
+            }
+        }
+        .about-second-text {
+            font-size: 12px !important;
+            width: auto !important;
+        }
+        .counters {
+            flex-direction: column;
+            gap: 25px !important;
+        }
+    }
+
     .dark {
         .burger-img {
             filter: invert(1);
@@ -399,6 +421,7 @@ header {
         font-style: normal;
         font-weight: 300;
         line-height: 27px; /* 168.75% */
+        width: 610px;
     }
 
     .counters {
