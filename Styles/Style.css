@@ -91,7 +91,7 @@
             filter: invert(1);
         }
     }
-}
+}  
 
 :root {
     --primary: #AB9AFF;
@@ -518,6 +518,13 @@ header {
             .cover-second-text {
                 color: #fff;
             }
+        }
+    }
+
+    /** About */
+    .about {
+        .elem-2 {
+            display: none;
         }
     }
 }
