@@ -6,6 +6,10 @@
     font-family: "Peyda Regular";
     src: url(../Fonts/Peyda/PeydaWeb-Regular.woff2) format("woff2");
 }
+@font-face {
+    font-family: "KalamehWeb(FaNum) Regular";
+    src: url(../Fonts/KalamehWeb/KalamehWeb\(FaNum\)-Regular.woff2) format("woff2");
+}
 
 /** Media Querys */
 @media screen and (max-width: 992px) {
@@ -87,7 +91,7 @@
             filter: invert(1);
         }
     }
-}
+}  
 
 :root {
     --primary: #AB9AFF;
@@ -359,6 +363,121 @@ header {
     }
 }
 
+/** About */
+.about {
+    background-color: var(--dark);
+    margin: 10px 20px;
+    padding: 40px 0px;
+    position: relative;
+    border-radius: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .elem-2 {
+        user-select: none;
+        position: absolute;
+        top: 0;
+        left: 15%;
+        width: 935px;
+    }
+
+    .logo-type-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        z-index: 2;
+
+        .about-type {
+            margin: 0;
+            font-family: "Modam Regular";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            color: #fff;
+        }
+    }
+
+    .about-second-text {
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        font-family: "Peyda Regular";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27px; /* 168.75% */
+    }
+
+    .counters {
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+
+        .card {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            flex-direction: column;
+            gap: 20px;
+            
+            .details {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                flex-direction: column;
+
+                .title {
+                    display: inline-block;
+                    margin: 0;
+                    font-family: "KalamehWeb(FaNum) Regular";
+                    color: #fff;
+                    text-align: center;
+                    font-size: 54px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 27px; /* 50% */
+                }
+                .more {
+                    margin: 0;
+                    display: inline-block;
+                    color: #707786;
+                    text-align: center;
+                    font-family: "KalamehWeb(FaNum) Regular";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 27px; /* 135% */
+                }
+            }
+        }
+    }
+
+    .more-btn {
+        font-family: "Modam Regular";
+        padding: 15px 20px;
+        border-radius: 57px;
+        background: none;
+        border: none;
+        outline: none;
+        transition: all ease 300ms 100ms;
+        color: #fff;
+        background-color: var(--primary);
+        border: 1px solid var(--primary);
+        width: 256px;
+        margin-top: 30px;
+    }
+    
+    .more-btn:hover {
+        background-color: transparent;
+        color: var(--primary);
+    }
+}
 
 
 /** Dark Mod */
@@ -411,6 +530,13 @@ header {
             .cover-second-text {
                 color: #fff;
             }
+        }
+    }
+
+    /** About */
+    .about {
+        .elem-2 {
+            display: none;
         }
     }
 }
