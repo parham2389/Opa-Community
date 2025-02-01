@@ -49,6 +49,20 @@
         }
     }
 
+    .respon-menu {
+        display: block !important;
+        right: -100vw !important; 
+        transition: all ease 800ms 100ms;  
+
+        .respon-burgerMenu {
+
+        }
+    }
+    .active {
+        backdrop-filter: blur(10px);
+        right: 0 !important;
+    }
+
     .line-1 {
         margin: 0 !important;
     }
@@ -256,6 +270,25 @@ nav{
             }
         }
 }   
+
+.respon-menu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    .respon-burgerMenu {
+        width: 80%;
+        height: 100%;
+        background-color: #fff;
+        -webkit-box-shadow: -45px 0px 75px -8px rgba(0,0,0,0.39);
+        -moz-box-shadow: -45px 0px 75px -8px rgba(0,0,0,0.39);
+        box-shadow: -45px 0px 75px -8px rgba(0,0,0,0.39);
+    }
+}
 
 .line-1 {
     margin: 0 50px;
