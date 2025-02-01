@@ -132,7 +132,12 @@
             }
 
             .theme-icon {
+                width: 25px;
                 padding-left: 8px;
+            }
+
+            .icon-light {
+                opacity: 0.5;
             }
         }
     }
@@ -264,6 +269,10 @@ body {
     overflow-x: hidden;
 }
 
+.display-none {
+    display: none !important;
+}
+
 .elem-1 {
     width: 465px;
     height: 465px;
@@ -342,7 +351,15 @@ nav{
                     }
                 }
 
-            }
+        }
+        
+        .theme-icon-desktop {
+            width: 25px;
+        }
+        
+        .icon-light-desktop {
+            opacity: 0.5;
+        }
 
         .left-nav {
             display: flex;

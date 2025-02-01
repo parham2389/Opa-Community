@@ -14,14 +14,46 @@ closeMenu.addEventListener("click", function () {
 })
 
 // Dark Mode
-let darkModeBtn = $.querySelector(".theme-icon")
-let darkModeDesktop = $.querySelector(".theme-icon-desktop")
+let darkModeBtn = $.querySelectorAll(".theme-icon")
+let dark = $.querySelector(".icon-dark")
+let light = $.querySelector(".icon-light")
+let darkModeDesktop = $.querySelectorAll(".theme-icon-desktop")
+let darkDesktop = $.querySelector(".icon-dark-desktop")
+let lightDesktop = $.querySelector(".icon-light-desktop")
 let body = $.body
 
-darkModeBtn.addEventListener("click", function () {
-    body.classList.toggle("dark")
+darkModeBtn.forEach(function (Btn) {
+    Btn.addEventListener("click", function () {
+        body.classList.toggle("dark")
+
+        if (body.className == "dark") {
+            dark.classList.remove("display-none")
+            light.classList.add("display-none")
+            console.log("Dark");
+        } else {
+            light.classList.remove("display-none")
+            dark.classList.add("display-none")
+            console.log("light");
+        }
+    })
 })
 
-darkModeDesktop.addEventListener("click", function () {
-    body.classList.toggle("dark")
+darkModeDesktop.forEach(function (Btn) {
+    Btn.addEventListener("click", function () {
+        body.classList.toggle("dark")
+
+        if (body.className == "dark") {
+            darkDesktop.classList.remove("display-none")
+            lightDesktop.classList.add("display-none")
+            console.log("Dark");
+        } else {
+            lightDesktop.classList.remove("display-none")
+            darkDesktop.classList.add("display-none")
+            console.log("light");
+        }
+    })
 })
+
+console.log(darkDesktop);
+console.log(lightDesktop);
+console.log(darkModeDesktop);
