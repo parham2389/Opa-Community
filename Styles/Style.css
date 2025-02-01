@@ -378,6 +378,10 @@ nav{
                 color: #fff;
             }
         }
+
+        .theme-icon-desktop {
+            cursor: pointer;
+        }
 }   
 
 .respon-menu {

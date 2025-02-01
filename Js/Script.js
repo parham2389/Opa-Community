@@ -15,8 +15,13 @@ closeMenu.addEventListener("click", function () {
 
 // Dark Mode
 let darkModeBtn = $.querySelector(".theme-icon")
+let darkModeDesktop = $.querySelector(".theme-icon-desktop")
 let body = $.body
 
 darkModeBtn.addEventListener("click", function () {
+    body.classList.toggle("dark")
+})
+
+darkModeDesktop.addEventListener("click", function () {
     body.classList.toggle("dark")
 })
