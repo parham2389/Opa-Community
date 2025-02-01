@@ -26,35 +26,33 @@ darkModeBtn.forEach(function (Btn) {
     Btn.addEventListener("click", function () {
         body.classList.toggle("dark")
 
+        if (body.className == "dark") {
+            dark.classList.remove("display-none")
+            light.classList.add("display-none")
+            console.log("Dark");
+        } else {
+            light.classList.remove("display-none")
+            dark.classList.add("display-none")
+            console.log("light");
+        }
     })
 })
-
-if (body.className == "dark") {
-    dark.classList.remove("display-none")
-    light.classList.add("display-none")
-    console.log("Dark");
-} else {
-    light.classList.remove("display-none")
-    dark.classList.add("display-none")
-    console.log("light");
-}
 
 darkModeDesktop.forEach(function (Btn) {
     Btn.addEventListener("click", function () {
         body.classList.toggle("dark")
 
+        if (body.className == "dark") {
+            darkDesktop.classList.remove("display-none")
+            lightDesktop.classList.add("display-none")
+            console.log("Dark");
+        } else {
+            lightDesktop.classList.remove("display-none")
+            darkDesktop.classList.add("display-none")
+            console.log("light");
+        }
     })
 })
-
-if (body.className == "dark") {
-    darkDesktop.classList.remove("display-none")
-    lightDesktop.classList.add("display-none")
-    console.log("Dark");
-} else {
-    lightDesktop.classList.remove("display-none")
-    darkDesktop.classList.add("display-none")
-    console.log("light");
-}
 
 console.log(darkDesktop);
 console.log(lightDesktop);
