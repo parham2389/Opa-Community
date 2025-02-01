@@ -803,4 +803,29 @@ header {
             display: none;
         }
     }
+
+    /** Features */
+    .features {
+        .title {
+            
+            .logo-darkMode {
+                display: inline;
+            }
+            .logo-lightMode {
+                display: none;
+            }
+            .title-details {
+                color: #fff;
+            }
+        }
+        .row {
+            .card {
+                .details {
+                    .details-title {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
