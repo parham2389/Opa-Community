@@ -652,6 +652,97 @@ header {
     }
 }
 
+/** Features */
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 66px;
+    padding: 95px 90px 80px 90px;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 13px;
+        
+        .logo-type {
+            display: flex;
+            gap: 10px;
+            justify-content: start;
+            align-items: center;
+    
+            .logo-lightMode {
+                width: 37px;
+                margin: 0;
+            }
+            .logo-darkMode{
+                width: 37px;
+                margin: 0;
+                display: none;
+            }
+            .features-title {
+                color: var(--primary);
+                font-family: "Modam Regular";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0;
+            }
+        }
+        .title-details {
+            color: var(--dark);
+            font-family: "Modam Regular";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0;
+        }
+    }   
+    .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 65px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 15px;
+
+            .icon {
+                width: 30px;
+            }
+            .details {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                gap: 3px;
+
+                .details-title {
+                    color: var(--dark);
+                    font-family: "Modam Regular";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; /* 175% */
+                    margin: 0;
+                }
+                .details-text {
+                    margin: 0;
+                    color: #707786;
+                    font-family: "Peyda Regular";
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27px; /* 225% */
+                }
+            }
+        }
+    }
+}
 
 /** Dark Mod */
 .dark {
