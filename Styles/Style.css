@@ -200,6 +200,41 @@
         .burger-img {
             filter: invert(1);
         }
+
+        .respon-menu {
+
+            .respon-burgerMenu {
+                background-color: var(--dark);
+
+                .burger-menuNav {
+
+                    .logo-type {
+
+                        .type {
+                            color: #fff;
+                        }
+                    }
+                    .close-menu {
+                        filter: invert(1);
+                    }
+                }
+            }
+            .burger-menuOptions {
+
+                .menu-option {
+                    color: #fff;
+                }
+            }
+            .theme {
+
+                .theme-text {
+                    color: #fff;
+                }
+                .theme-icon {
+                    filter: invert(1);
+                }
+            }
+        }
     }
 }  
 
