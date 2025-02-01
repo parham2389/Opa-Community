@@ -49,6 +49,94 @@
         }
     }
 
+    .respon-menu {
+        display: block !important;
+        right: -100vw !important; 
+        transition: all ease 800ms 100ms;  
+
+        .respon-burgerMenu {
+            display: flex;
+            flex-direction: column; 
+
+            padding: 30px 10px;
+            
+            .burger-menuNav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo-type {
+                    display: flex;
+                    gap: 6px;
+                    align-items: center;
+                    justify-content: start;
+    
+                    .logo {
+                        width: 35px;
+                        height: 35px;
+                    }
+    
+                    .type {
+                        font-size: 20px !important;
+                        font-family: "Modam Regular" !important;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        color: var(--dark);
+                        margin: 0;
+                    }
+                }
+                .close-icon {
+                    width: 30px;
+                }
+            }
+
+            .burger-menuOptions {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-right: 40px;
+
+                .menu-option {
+                    /* text-align: center; */
+                    list-style: none;
+                    font-family: "Peyda Regular";
+                    font-size: 18px;
+                    font-style: normal;
+                    line-height: normal;
+                    text-decoration: none;
+                    color: #707786;
+                    transition: all ease 300ms 100ms;
+                }
+            }
+        }
+
+        .theme {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .theme-text {
+                list-style: none;
+                    font-family: "Peyda Regular";
+                    font-size: 18px;
+                    font-style: normal;
+                    line-height: normal;
+                    text-decoration: none;
+                    color: #707786;
+                    padding-right: 40px;
+            }
+
+            .theme-icon {
+                padding-left: 8px;
+            }
+        }
+    }
+    .active {
+        backdrop-filter: blur(10px);
+        right: 0 !important;
+    }
+
     .line-1 {
         margin: 0 !important;
     }
@@ -256,6 +344,25 @@ nav{
             }
         }
 }   
+
+.respon-menu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    .respon-burgerMenu {
+        width: 80%;
+        height: 100%;
+        background-color: #fff;
+        -webkit-box-shadow: -45px 0px 75px -8px rgba(0,0,0,0.39);
+        -moz-box-shadow: -45px 0px 75px -8px rgba(0,0,0,0.39);
+        box-shadow: -45px 0px 75px -8px rgba(0,0,0,0.39);
+    }
+}
 
 .line-1 {
     margin: 0 50px;
