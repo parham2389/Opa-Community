@@ -47,6 +47,10 @@
         .burger-img {
             width: 24px;
         }
+
+        .theme-icon-desktop {
+            display: none !important;
+        }
     }
 
     .respon-menu {
