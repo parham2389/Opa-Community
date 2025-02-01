@@ -200,6 +200,37 @@
         }
     }
 
+    .features {
+        gap: 45px !important;
+        padding: 50px 20px 40px 20px !important;
+
+        .title {
+            gap: 10px !important;
+
+            .logo-type {
+                .features-title {
+                    font-size: 16px !important;
+                }
+
+                .logo-darkMode, .logo-lightMode {
+                    width: 30px !important;
+                }
+            }
+            .details-title {
+                font-size: 18px !important;
+            }
+        }
+        .row {
+            flex-wrap: wrap;
+
+            .card {
+                .details-text {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
     .dark {
         .burger-img {
             filter: invert(1);
