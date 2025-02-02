@@ -283,6 +283,10 @@
     --dark: #111;
 }
 
+* {
+    transition: All ease 300ms 100ms;
+}
+
 *::-webkit-scrollbar {
     width: 7px;
   }
