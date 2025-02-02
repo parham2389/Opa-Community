@@ -53,7 +53,3 @@ darkModeDesktop.forEach(function (Btn) {
         }
     })
 })
-
-console.log(darkDesktop);
-console.log(lightDesktop);
-console.log(darkModeDesktop);
