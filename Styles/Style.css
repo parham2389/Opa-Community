@@ -987,4 +987,42 @@ header {
             }
         }
     }
+
+    /** Services */
+    .services {
+        background-color: #111;
+
+        .title {
+
+            .logo-type {
+
+                .logo-darkMode {
+                    display: block;
+                }    
+                .logo-lightMode {
+                    display: none;
+                }   
+            }
+            .title-details {
+                color: #fff;
+            } 
+        }
+        .row {
+            .card {
+                .details {
+
+                    .details-title {
+                        color: #fff;
+                    }
+                }
+            }
+            .card:hover {
+                .details {
+                    .details-title {
+                        color: #2B2D33;
+                    }
+                }
+            }
+        }
+    }
 }
