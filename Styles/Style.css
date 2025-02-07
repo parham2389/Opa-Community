@@ -236,6 +236,36 @@
         }
     }
 
+    .services {
+        border-radius: 30px !important;
+        padding: 36px 20px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+        justify-content: start;
+
+        .title {
+            .logo-type {
+                .features-title {
+                    font-size: 16px !important;
+                }
+            }
+            .title-details {
+                font-size: 18px !important;
+            }
+        }
+        .row {
+            gap: 20px !important;
+            padding: 0 !important;
+            flex-direction: column !important;
+        }
+        .row:last-child {
+            display: none !important;
+        }
+    }
+
     .dark {
         .burger-img {
             filter: invert(1);
@@ -895,10 +925,6 @@ header {
             .more {
                 text-align: end;
             }
-        }
-        .card:hover {
-            transform: scale(120%);
-            background-color: #fff;
         }
     }
 }
