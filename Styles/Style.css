@@ -889,7 +889,7 @@ header {
             gap: 16px;
             border-radius: 15px;
             padding: 20px 30px;
-            border: 1px solid #fff;
+            border: 1px solid #D7CFFF;
 
             .icon {
                 width: 60px;
@@ -1039,13 +1039,6 @@ header {
 
                     .details-title {
                         color: #fff;
-                    }
-                }
-            }
-            .card:hover {
-                .details {
-                    .details-title {
-                        color: #2B2D33;
                     }
                 }
             }
